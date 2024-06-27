@@ -42,7 +42,7 @@ const Homepage = () => {
         <Tabs variant="soft-rounded">
           <TabList>
             <Tab width="50%">Login</Tab>
-            <Tab width="50%">Signup</Tab>
+            <Tab width="50%">Sign up</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>

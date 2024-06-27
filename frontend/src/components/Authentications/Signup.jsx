@@ -13,15 +13,12 @@ import {
 
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [pic, setPic] = useState("");
   const [guestEmail, setGuestEmail] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [userData, setUserData] = useState({
-    username: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [pic, setPic] = useState("");
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -51,7 +48,7 @@ const Signup = () => {
           placeholder="Enter Name"
           name="username"
           onChange={handleChange}
-          value={userData.username}
+          value={name}
         />
       </FormControl>
       <FormControl isRequired>
@@ -61,7 +58,7 @@ const Signup = () => {
           placeholder="Enter Email"
           name="email"
           onChange={handleChange}
-          value={userData.email}
+          value={email}
         />
       </FormControl>
 
@@ -73,7 +70,7 @@ const Signup = () => {
             placeholder="Enter password"
             name="password"
             onChange={handleChange}
-            value={userData.password}
+            value={password}
           />
           <InputRightElement width="2.5rem">
             <Button onClick={handleClick} h="2rem" size="sm">
@@ -91,7 +88,7 @@ const Signup = () => {
             placeholder="Enter confirm password"
             name="confirmPassword"
             onChange={handleChange}
-            value={userData.confirmPassword}
+            value={confirmPassword}
           />
           <InputRightElement width="2.5rem">
             <Button onClick={handleClick} h="2rem" size="sm">
